@@ -10,13 +10,18 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+
+        <!-- 跳转到 注册的子应用的路由上, 自然会匹配到 -->
+        <RouterLink to="/vue2-app">vue2-app</RouterLink>
       </nav>
     </div>
   </header>
 
-  <div style="background-color: aquamarine;">
-    <RouterView />
-  </div>
+  <!-- 主应用渲染区域 -->
+  <RouterView />
+
+  <!-- 子应用渲染区域 -->
+  <div id="sub-app" style="background-color: aquamarine;"></div>
 </template>
 
 <style scoped>

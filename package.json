@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --open",
+    "serve": "vite --open",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "pinia": "^2.1.7",
+    "qiankun": "^2.10.16",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
