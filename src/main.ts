@@ -18,7 +18,7 @@ const subApp = [
   {
     name: "vue2App", // 子应用的名字
     activeRule: "/vue2-app", // 子应用匹配到的路由
-    entry: "//localhost:8080", // 子应用的地址
+    entry: "//localhost:3001", // 子应用的地址
     container: "#sub-app", // 加载的容器
   },
 ];
